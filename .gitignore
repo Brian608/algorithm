@@ -1,6 +1,5 @@
 /out/
 /target/
-.idea
 .classpath
 .project
 .settings
@@ -37,3 +36,4 @@ Icon?
 ehthumbs.db
 Thumbs.db
 /out/
+.idea
