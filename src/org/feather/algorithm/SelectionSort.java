@@ -13,11 +13,14 @@ public class SelectionSort {
             for (int j = i+1; j <arr.length ; j++) {
                 minPos=arr[j]<arr[minPos]?j:minPos;
             }
-            int temp=arr[i];
-            arr[i]=arr[minPos];
-            arr[minPos]=temp;
+           swap(arr,i,minPos);
         }
         return  arr;
+    }
+    static  void  swap(int [] arr, int i,int j){
+        int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
     }
 
     public static void main(String[] args) {
