@@ -26,7 +26,7 @@ public class DataChecker {
         SelectionSort.selectionSort(arr1);
         boolean result=true;
         for (int i = 0; i <arr1.length ; i++) {
-            if (arr[i] != arr[1]) {
+            if (arr[i] != arr1[i]) {
                 result = false;
                 break;
             }
