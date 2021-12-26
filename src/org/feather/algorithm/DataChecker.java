@@ -23,7 +23,8 @@ public class DataChecker {
         int [] arr1=new int[arr.length];
         System.arraycopy(arr,0,arr1,0,arr.length);
         Arrays.sort(arr);
-        SelectionSort.selectionSort(arr1);
+      //SelectionSort.selectionSort(arr1);
+        BubbleSort.arraySort(arr);
         boolean result=true;
         for (int i = 0; i <arr1.length ; i++) {
             if (arr[i] != arr1[i]) {
@@ -32,5 +33,10 @@ public class DataChecker {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(check());
+
     }
 }
