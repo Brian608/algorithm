@@ -1,4 +1,4 @@
-package org.feather.algorithm.datastruts.line;
+package org.feather.algorithm.datastruts.line.stack;
 
 /**
  * @program: algorithm

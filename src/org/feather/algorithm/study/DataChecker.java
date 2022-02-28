@@ -1,4 +1,4 @@
-package org.feather.algorithm;
+package org.feather.algorithm.study;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,6 +1,4 @@
-package org.feather.algorithm.datastruts.line;
-
-import org.feather.algorithm.leetcode.mergeTwoLists;
+package org.feather.algorithm.datastruts.line.linkedList;
 
 /**
  * @program: algorithm

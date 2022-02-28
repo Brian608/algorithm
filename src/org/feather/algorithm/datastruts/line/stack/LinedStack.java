@@ -1,6 +1,4 @@
-package org.feather.algorithm.datastruts.line;
-
-import org.w3c.dom.Node;
+package org.feather.algorithm.datastruts.line.stack;
 
 /**
  * @program: algorithm
