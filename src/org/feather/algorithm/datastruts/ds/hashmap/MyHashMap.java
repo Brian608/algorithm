@@ -1,7 +1,5 @@
 package org.feather.algorithm.datastruts.ds.hashmap;
 
-import java.util.List;
-import java.util.Map;
 
 /**
  * @program: algorithm
@@ -68,5 +66,11 @@ public class MyHashMap {
             return "";
         }
         return  listNode.getVal(key);
+    }
+
+    public static void main(String[] args) {
+        MyHashMap hashMap=new MyHashMap();
+        hashMap.put("name","dxs");
+        System.out.println(hashMap.get("name"));
     }
 }

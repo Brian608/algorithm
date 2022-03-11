@@ -24,19 +24,19 @@ public class ListNode {
         //临时变量
         Node tmp=head;
         //循环单链表
-        while (head!=null){
+        while (true){
             //key相同则覆盖
-            if (key.equals(tmp.key)){
+            if (key.equals(tmp.next)){
                 tmp.value=value;
-            }else {
-                //key不同
-                //挂载到下一个
-                tmp.next=node;
             }
-            //指向下一个
-            tmp=tmp.next;
-
+        if (tmp.next==null){
+           break;
         }
+        //指向下一个
+             tmp=tmp.next;
+        }
+        //在循环外挂载到最后一个节点
+        tmp.next=node;
 
     }
 
