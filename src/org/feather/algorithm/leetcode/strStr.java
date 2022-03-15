@@ -43,11 +43,11 @@ package org.feather.algorithm.leetcode;
  * @since 15-Mar-22 9:46 AM
  */
 public class strStr {
-    public int strStr(String haystack, String needle) {
-        int result = 0;
-        if (needle==null||"".equals(needle)){
-            return 0;
-        }
-    return  result;
+    public static int strStr(String haystack, String needle) {
+    return haystack.indexOf(needle);
+    }
+
+    public static  void main(String[] args) {
+        System.out.println(strStr("aaa","bbb"));
     }
 }
