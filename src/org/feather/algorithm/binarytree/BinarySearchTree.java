@@ -1,5 +1,8 @@
 package org.feather.algorithm.binarytree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @program: algorithm
  * @description:二叉查找树
@@ -97,5 +100,32 @@ public class BinarySearchTree {
 
         System.out.println("======后序遍历=======");
         binarySearchTree.afterTraver(binarySearchTree.root);
+        System.out.println("=========广度遍历=======");
+        binarySearchTree.levelTraver(binarySearchTree.root);
+    }
+
+    /**
+     * 广度遍历
+     * @param root
+     */
+    public  void levelTraver(TreeNode root){
+        //队列
+        Queue<TreeNode> queue=new LinkedList<>();
+        //从队尾入队
+        queue.offer(root);
+        //队列不为空
+        while (!queue.isEmpty()){
+            //出队， 队头并删除
+            TreeNode node= queue.poll();
+            System.out.println(node.data);
+            //左孩子入队
+            if (node.leftChild!=null){
+                queue.offer(node.leftChild);
+            }
+            //右孩子入队
+            if (node.rightChild!=null){
+                queue.offer(node.rightChild);
+            }
+        }
     }
 }

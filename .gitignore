@@ -8,6 +8,7 @@
 *.ldb
 *.sln
 ##class file##
+*.iml
 *.com
 *.class
 *.dll
